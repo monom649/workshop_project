@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成AIワークショップ「AIで調べて・形にして・動かす」</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Heroセクション -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">AIで調べて・形にして・動かす</h1>
+            <p class="hero-subtitle">リサーチ × 画像生成 × 動画生成を60分で体験</p>
+        </div>
+    </section>
+
+    <!-- 導入セクション -->
+    <section class="introduction">
+        <div class="container">
+            <h2>このワークショップで学べること</h2>
+            <p>AIは「万能な答えを出す存在」ではなく「道具」です。<br>本ワークショップでは、AIを使って</p>
+            <ul>
+                <li>アイデアを調べる</li>
+                <li>形にする（静止画）</li>
+                <li>動かす（動画）</li>
+            </ul>
+            <p>という流れを体験します。</p>
+            
+            <div class="flow-diagram">
+                <div class="flow-card">
+                    <div class="flow-icon">💡</div>
+                    <h3>ChatGPT</h3>
+                    <p>アイデア出し</p>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flow-card">
+                    <div class="flow-icon">🔍</div>
+                    <h3>Deep Research</h3>
+                    <p>裏付け</p>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flow-card">
+                    <div class="flow-icon">🖼</div>
+                    <h3>Midjourney</h3>
+                    <p>静止画生成</p>
+                </div>
+                <div class="arrow">→</div>
+                <div class="flow-card">
+                    <div class="flow-icon">🎬</div>
+                    <h3>Runway / Vidu</h3>
+                    <p>動画生成</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AIの仕組み理解 -->
+    <section class="ai-mechanism">
+        <div class="container">
+            <h2>AIはどう動くのか？</h2>
+            <p>AI（LLM）は「大量の文章をもとに次の言葉を予測する仕組み」。<br>
+               出てくる答えは <strong>仮説リスト</strong> であり、事実を保証するものではありません。<br>
+               Deep Researchを併用することで、ニュースや記事を引用し「根拠つきの答え」にできます。</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-bubble">
+                        <h3>ChatGPT</h3>
+                        <p>仮説を出す</p>
+                    </div>
+                </div>
+                <div class="timeline-arrow">↓</div>
+                <div class="timeline-item">
+                    <div class="timeline-bubble">
+                        <h3>Deep Research</h3>
+                        <p>根拠を補強</p>
+                    </div>
+                </div>
+                <div class="timeline-arrow">↓</div>
+                <div class="timeline-item">
+                    <div class="timeline-bubble">
+                        <h3>完成</h3>
+                        <p>「根拠つきアイデア」が完成</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- リサーチ活用 -->
+    <section class="research">
+        <div class="container">
+            <h2>AIリサーチの活用</h2>
+            <p>ChatGPTとDeep Researchを組み合わせて「投稿の仮説＋裏付け」を作ります。</p>
+            <div class="example">
+                <p><strong>例：</strong></p>
+                <ul>
+                    <li>「2025年、冷凍食品レシピでファミリー層に人気の投稿傾向」</li>
+                    <li>「外食チェーンのSNS成功事例を3つ」</li>
+                </ul>
+            </div>
+            
+            <div class="comparison-table">
+                <div class="tool-card">
+                    <div class="tool-icon">💡</div>
+                    <h3>ChatGPT</h3>
+                    <div class="tool-details">
+                        <p><strong>入力:</strong> テキスト</p>
+                        <p><strong>出力:</strong> テキスト</p>
+                        <p><strong>特徴:</strong> アイデア出し・仮説整理</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔍</div>
+                    <h3>Deep Research</h3>
+                    <div class="tool-details">
+                        <p><strong>入力:</strong> テキスト＋検索</p>
+                        <p><strong>出力:</strong> テキスト＋出典</p>
+                        <p><strong>特徴:</strong> 根拠のあるリサーチ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 画像生成 -->
+    <section class="image-generation">
+        <div class="container">
+            <h2>Midjourneyで静止画をつくる</h2>
+            <p>Midjourneyはテキストから高品質な静止画を生成します。<br>
+               映画ポスター風やイメージボード作りに最適です。</p>
+            <div class="example">
+                <p><strong>例：</strong>「夜の街でネオンを背に歩く青年、映画ポスター風」</p>
+            </div>
+            
+            <div class="single-tool-card">
+                <div class="tool-icon">🖼</div>
+                <h3>Midjourney</h3>
+                <div class="tool-details">
+                    <p><strong>入力:</strong> テキスト</p>
+                    <p><strong>出力:</strong> 静止画</p>
+                    <p><strong>特徴:</strong> イメージボード作成</p>
+                </div>
+                <div class="text-to-image">テキスト → 画像</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 動画生成 -->
+    <section class="video-generation">
+        <div class="container">
+            <h2>RunwayとViduで動画をつくる</h2>
+            <div class="tool-description">
+                <p><strong>Runway：</strong>静止画や映像をベースに動きを加えるのが得意</p>
+                <p><strong>Vidu：</strong>参照画像を忠実に動かすのが得意</p>
+            </div>
+            
+            <div class="comparison-table">
+                <div class="tool-card">
+                    <div class="tool-icon">✨</div>
+                    <h3>Runway</h3>
+                    <div class="tool-details">
+                        <p><strong>入力:</strong> 画像/映像</p>
+                        <p><strong>出力:</strong> 動画</p>
+                        <p><strong>特徴:</strong> 元素材から動きを追加</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🎯</div>
+                    <h3>Vidu</h3>
+                    <div class="tool-details">
+                        <p><strong>入力:</strong> 参照画像＋テキスト</p>
+                        <p><strong>出力:</strong> 動画</p>
+                        <p><strong>特徴:</strong> 参照画像を強力に反映</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-flow">
+                <div class="flow-item">
+                    <h3>Midjourney</h3>
+                    <p>静止画</p>
+                </div>
+                <div class="arrow">↓</div>
+                <div class="flow-branches">
+                    <div class="branch">
+                        <h4>Runway</h4>
+                        <p>動きをつける</p>
+                    </div>
+                    <div class="branch">
+                        <h4>Vidu</h4>
+                        <p>参照画像から動かす</p>
+                    </div>
+                </div>
+                <div class="arrow">↓</div>
+                <div class="flow-item">
+                    <h3>完成</h3>
+                    <p>「動くイメージボード」が完成</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- まとめセクション -->
+    <section class="summary">
+        <div class="container">
+            <h2>まとめ</h2>
+            <p>今日の流れは次の4ステップです。</p>
+            
+            <div class="summary-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">💡</div>
+                    <h3>ChatGPTでアイデアを出す</h3>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🔍</div>
+                    <h3>Deep Researchで根拠を補強する</h3>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">🖼</div>
+                    <h3>Midjourneyで静止画を作る</h3>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">🎬</div>
+                    <h3>Runway／Viduで動画にする</h3>
+                </div>
+            </div>
+            
+            <div class="emphasis-box">
+                <p><strong>AIは仮説と表現を助ける道具</strong></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

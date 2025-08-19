@@ -1,0 +1,480 @@
+/* 基本設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Heroセクション */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+/* セクション共通 */
+section {
+    padding: 80px 0;
+}
+
+section:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    margin: 20px 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+ul li::before {
+    content: "✓ ";
+    color: #667eea;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* フローダイアグラム */
+.flow-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.flow-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.flow-card:hover {
+    transform: translateY(-5px);
+}
+
+.flow-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.flow-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.flow-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 0;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #667eea;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* タイムライン */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-bubble {
+    background: white;
+    border-radius: 20px;
+    padding: 25px 40px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-left: 5px solid #667eea;
+    max-width: 300px;
+}
+
+.timeline-bubble h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.timeline-bubble p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 0;
+}
+
+.timeline-arrow {
+    font-size: 2rem;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* 例示ボックス */
+.example {
+    background: #e8f4f8;
+    border-left: 4px solid #3498db;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.example p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.example ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.example ul li {
+    list-style: disc;
+    margin: 8px 0;
+}
+
+.example ul li::before {
+    content: none;
+}
+
+/* 比較テーブル */
+.comparison-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.tool-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.tool-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.tool-details p {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.tool-details strong {
+    color: #667eea;
+}
+
+/* 単一ツールカード */
+.single-tool-card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+.text-to-image {
+    background: #667eea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* ツール説明 */
+.tool-description {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.tool-description p {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* 動画フロー */
+.video-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.flow-item {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+.flow-item h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.flow-item p {
+    margin: 0;
+    color: #7f8c8d;
+}
+
+.flow-branches {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.branch {
+    text-align: center;
+    padding: 20px;
+    background: #e8f4f8;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+.branch h4 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.branch p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* まとめセクション */
+.summary {
+    background: #f8f9fa;
+}
+
+.summary-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.step-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: #667eea;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.step-icon {
+    font-size: 2.5rem;
+    margin: 20px 0 15px 0;
+}
+
+.step-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* 強調ボックス */
+.emphasis-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 50px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.emphasis-box p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .flow-diagram {
+        flex-direction: column;
+    }
+    
+    .arrow {
+        transform: rotate(90deg);
+    }
+    
+    .comparison-table {
+        grid-template-columns: 1fr;
+    }
+    
+    .flow-branches {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .summary-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .flow-card, .tool-card, .step-card {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+}
