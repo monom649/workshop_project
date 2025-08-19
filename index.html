@@ -61,10 +61,69 @@
     <!-- AIの仕組み理解 -->
     <section class="ai-mechanism">
         <div class="container">
-            <h2>AIはどう動くのか？</h2>
-            <p>AI（LLM）は「大量の文章をもとに次の言葉を予測する仕組み」。<br>
-               出てくる答えは <strong>仮説リスト</strong> であり、事実を保証するものではありません。<br>
-               Deep Researchを併用することで、ニュースや記事を引用し「根拠つきの答え」にできます。</p>
+            <h2>AI（LLM）はどうやって答えを作る？</h2>
+            <p>AIは「大量の文章を読んで、次に来そうな言葉を予測する」しくみで動いています。<br>
+               だからAIが出す答えは、正解の保証がある情報ではなく「よくあるパターンをまとめた推測」です。</p>
+            
+            <div class="ai-comparison">
+                <div class="comparison-cards">
+                    <div class="comparison-card correct">
+                        <div class="card-icon">✅</div>
+                        <h3>AIは"天気予報"のように予測をする</h3>
+                        <p>パターンから可能性を計算</p>
+                    </div>
+                    <div class="comparison-card incorrect">
+                        <div class="card-icon">❌</div>
+                        <h3>AIは"観測した事実"を教えているわけではない</h3>
+                        <p>確定した情報ではない</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ai-vs-human">
+                <h3>人間 vs AI の情報処理</h3>
+                <div class="vs-diagram">
+                    <div class="vs-item">
+                        <div class="vs-icon">👤</div>
+                        <h4>人間</h4>
+                        <p>実際に経験や調査から<br>知識を得る</p>
+                    </div>
+                    <div class="vs-vs">VS</div>
+                    <div class="vs-item">
+                        <div class="vs-icon">🤖</div>
+                        <h4>AI</h4>
+                        <p>文章のパターンを学び<br>→ 次に来る言葉を予測する</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ai-summary">
+                <h3>つまり...</h3>
+                <div class="summary-grid">
+                    <div class="summary-item good">
+                        <div class="summary-icon">💡</div>
+                        <h4>得意なこと</h4>
+                        <ul>
+                            <li>「面白い仮説」を出す</li>
+                            <li>「よくある傾向」をまとめる</li>
+                        </ul>
+                    </div>
+                    <div class="summary-item caution">
+                        <div class="summary-icon">⚠️</div>
+                        <h4>注意すること</h4>
+                        <ul>
+                            <li>「正しい答えかどうか」を確認するのは人間の仕事</li>
+                        </ul>
+                    </div>
+                    <div class="summary-item solution">
+                        <div class="summary-icon">🔍</div>
+                        <h4>解決策</h4>
+                        <ul>
+                            <li>Deep Researchを組み合わせれば「出典つき」で補強できる</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             
             <div class="timeline">
                 <div class="timeline-item">

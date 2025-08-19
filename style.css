@@ -134,6 +134,195 @@ ul li::before {
     margin: 0 10px;
 }
 
+/* AI比較カード */
+.ai-comparison {
+    margin: 50px 0;
+}
+
+.comparison-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.comparison-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.comparison-card:hover {
+    transform: translateY(-5px);
+}
+
+.comparison-card.correct {
+    border-left: 5px solid #27ae60;
+}
+
+.comparison-card.incorrect {
+    border-left: 5px solid #e74c3c;
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.comparison-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.comparison-card p {
+    color: #7f8c8d;
+    margin: 0;
+}
+
+/* 人間 vs AI */
+.ai-vs-human {
+    margin: 60px 0;
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.ai-vs-human h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.vs-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.vs-item {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    min-width: 200px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+.vs-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.vs-item h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.vs-item p {
+    color: #7f8c8d;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.vs-vs {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* AIまとめ */
+.ai-summary {
+    margin: 60px 0;
+}
+
+.ai-summary h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.summary-item {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.summary-item:hover {
+    transform: translateY(-5px);
+}
+
+.summary-item.good {
+    border-left: 5px solid #27ae60;
+}
+
+.summary-item.caution {
+    border-left: 5px solid #f39c12;
+}
+
+.summary-item.solution {
+    border-left: 5px solid #3498db;
+}
+
+.summary-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.summary-item h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.summary-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.summary-item ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.summary-item ul li::before {
+    content: "•";
+    color: #667eea;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
 /* タイムライン */
 .timeline {
     display: flex;
@@ -486,6 +675,23 @@ ul li::before {
     }
     
     .comparison-table {
+        grid-template-columns: 1fr;
+    }
+    
+    .comparison-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .vs-diagram {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .vs-vs {
+        transform: rotate(90deg);
+    }
+    
+    .summary-grid {
         grid-template-columns: 1fr;
     }
     
