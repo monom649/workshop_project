@@ -248,6 +248,28 @@ ul li::before {
     color: #667eea;
 }
 
+/* Midjourneyショーケース */
+.midjourney-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.sample-image {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.sample-image:hover {
+    transform: scale(1.02);
+}
+
 /* 単一ツールカード */
 .single-tool-card {
     background: white;
@@ -255,8 +277,8 @@ ul li::before {
     padding: 40px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin: 50px auto;
     max-width: 500px;
+    width: 100%;
 }
 
 .text-to-image {
@@ -476,5 +498,14 @@ ul li::before {
     
     h2 {
         font-size: 1.8rem;
+    }
+    
+    .sample-image {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .midjourney-showcase {
+        gap: 20px;
     }
 }
