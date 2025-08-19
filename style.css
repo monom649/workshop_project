@@ -259,7 +259,7 @@ ul li::before {
 
 .sample-image {
     max-width: 100%;
-    width: 600px;
+    width: 300px;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
@@ -502,7 +502,7 @@ ul li::before {
     
     .sample-image {
         width: 100%;
-        max-width: 400px;
+        max-width: 200px;
     }
     
     .midjourney-showcase {
