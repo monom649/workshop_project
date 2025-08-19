@@ -226,6 +226,20 @@ ul li::before {
     transform: translateY(-5px);
 }
 
+.tool-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tool-image:hover {
+    transform: scale(1.02);
+}
+
 .tool-icon {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -503,6 +517,10 @@ ul li::before {
     .sample-image {
         width: 100%;
         max-width: 200px;
+    }
+    
+    .tool-image {
+        max-width: 180px;
     }
     
     .midjourney-showcase {
