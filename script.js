@@ -63,15 +63,16 @@ function initSmoothScroll() {
 
 // ページ読み込み完了時の初期化
 document.addEventListener('DOMContentLoaded', function() {
-    initScrollAnimations();
+    // まず基本機能を初期化
     initCardClickAnimations();
     initSmoothScroll();
     
-    // セクションにアニメーションクラスを追加
+    // セクションにアニメーションクラスを追加（デバッグのため一時的に無効化）
     const sections = document.querySelectorAll('section');
     sections.forEach((section, index) => {
         if (index > 0) { // Heroセクション以外
             section.classList.add('animate-on-scroll');
+            // 初期状態では表示（will-animateクラスは後で追加）
         }
     });
     
@@ -80,6 +81,17 @@ document.addEventListener('DOMContentLoaded', function() {
     cards.forEach(card => {
         card.classList.add('clickable-card');
     });
+    
+    // 少し遅れてスクロールアニメーションを有効化
+    setTimeout(() => {
+        initScrollAnimations();
+        // この時点でwill-animateクラスを追加してアニメーション準備
+        sections.forEach((section, index) => {
+            if (index > 0) {
+                section.classList.add('will-animate');
+            }
+        });
+    }, 100);
 });
 
 // スクロール時のヘッダー効果（オプション）
